@@ -3,37 +3,38 @@
 🚗 Car Dheko - Used Car Price Prediction
       
 
-📊 Project Overview
+# 📊 Project Overview
 The "Car Dheko - Used Car Price Prediction" project aims to develop an accurate machine learning model that predicts the prices of used cars. The project also involves deploying this model as an interactive web application using Streamlit. This tool will be user-friendly and accessible to both customers and sales representatives, allowing them to input car features and obtain real-time price predictions.
 
-🔍 Project Scope
+# 🔍 Project Scope
 The project leverages historical data on used car prices from CarDekho, which includes various features such as make, model, year, fuel type, transmission type, and more. The objective is to create a machine learning model that can accurately predict used car prices based on these features. The model will be integrated into a Streamlit-based web application, which will allow users to input car details and receive price estimates instantly.
 
-🎯 Problem Statement
+# 🎯 Problem Statement
 Enhancing customer experience and streamlining the pricing process at Car Dheko by leveraging machine learning. The goal is to create a user-friendly tool that predicts the prices of used cars based on various features and deploy it as an interactive web application.
 
-🔗 Data Source
+# 🔗 Data Source
 We would be working with quite a large data which contains about 8369 data points where again we would be dividing that into the training set and the test set.
 Having a look at some of the cars that we are always excited to use in our daily lives, it is better to understand how these cars are being sold and their average prices.
 Feel free to take a look at the dataset that was used in the process of predicting the prices of cars. Below is the link.
 Source: https://www.cardekho.com/usedCars
 
-📂 Dataset
+# 📂 Dataset
 The dataset comprises multiple Excel files, each representing data from a different city. It includes detailed information about used cars listed on CarDekho, such as their specifications and available features. The data needs to be preprocessed to handle missing values, standardize formats, encode categorical variables, and normalize numerical features.
 
 Feature Description Link : Features
 
-📈 Metrics
+# 📈 Metrics
 Predicting used car prices is a continuous machine learning problem. Therefore, the following metrics that are useful for regression problems are taken into account. Below are the metrics that was used in the process of predicting car prices.
 
 Mean Squared Error (MSE)
 Mean Absolute Error (MAE)
 R-squared (R2)
 Root Mean Squared Error (RMSE)
-🚀 Approach
-1. Data Processing
+
+# 🚀 Approach
+
+# 1. Data Processing
 Import and concatenate the datasets for various cities, convert them into a structured format, and concatenate them into a single dataset.
-Data before structuring (unstructured data)
 
 dictionary
 Address missing data using imputation techniques—mean, median, or mode for numerical columns, and mode or a new category for categorical columns.
@@ -46,10 +47,9 @@ Normalizing numerical features using techniques like Min-Max Scaling or Standard
 
 Identify and remove or cap outliers using methods such as the IQR (Interquartile Range) method or Z-score analysis.
 
-Data after structuring
 
  
-2. Exploratory Data Analysis (EDA)
+# 2. Exploratory Data Analysis (EDA)
 In this section, the dataset is thoroughly explored to uncover patterns, trends, and insights that can guide further analysis and model development. EDA helps in understanding the data better and in identifying any anomalies, relationships, or key features that may influence the model's performance.
 
 2.1 Statistics Calculated:
@@ -183,6 +183,14 @@ Calculate Metrics: Compute MAE, MSE, and R² for each model you have trained.
 Compare Scores: Evaluate which model has the lowest MAE and MSE and the highest R².
 
 Select the Best Model: Choose the model that best balances these metrics according to your specific needs and objectives.
+
+Machine Learning Models	Mean Absolute Error (MAE)	Root Mean Squared Error (RMSE)	Mean Squared Error (MSE)	R-squared (R2)
+1. Linear Regression	4.38171	6.30828	3.57944	0.72963
+2. Decision Tree Regressor	2.70174	5.1175	2.61888	0.82207
+3. Gradient Boosting Regressor	2.90385	4.76576	2.27124	0.84568
+4. Random Forests Regressor	2.1568	4.08725	1.65056	0.8865
+<img width="985" height="148" alt="image" src="https://github.com/user-attachments/assets/bdcfe2f1-d39e-4ec9-8caa-33d915ee82d7" />
+
 
 Machine Learning Models	Mean Absolute Error (MAE)	Root Mean Squared Error (RMSE)	Mean Squared Error (MSE)	R-squared (R2)
 1. Linear Regression	4.38171	6.30828	3.57944	0.72963
