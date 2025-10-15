@@ -2,9 +2,9 @@
 
 🚗 Car Dheko - Used Car Price Prediction
 
-      <img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/37a72087-d1f7-499d-9b6a-64155cc1126b" />
+<img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/37a72087-d1f7-499d-9b6a-64155cc1126b" />
       
-   <img width="1918" height="996" alt="image" src="https://github.com/user-attachments/assets/58091af4-f899-4d4f-9851-cf9b3a344e94" />
+<img width="1918" height="996" alt="image" src="https://github.com/user-attachments/assets/58091af4-f899-4d4f-9851-cf9b3a344e94" />
 
 
 # 📊 Project Overview
@@ -41,6 +41,7 @@ Root Mean Squared Error (RMSE)
 # 1. Data Processing
 Import and concatenate the datasets for various cities, convert them into a structured format, and concatenate them into a single dataset.
 # Data before structuring (unstructured data)
+
 <img width="1909" height="373" alt="image" src="https://github.com/user-attachments/assets/cf74a71c-7d54-4aae-810c-813dcf4090ed" />
 
 
@@ -85,24 +86,30 @@ visualizations were created:
 
 Visualize relationships between two numerical variables. For example, a scatter plot of price vs. mileage can reveal how the price decreases as mileage increases.
 
-<img width="1325" height="870" alt="image" src="https://github.com/user-attachments/assets/4a5a0ad9-3c5e-4c38-b52c-c1d1e83ec7df" />
+<img width="940" height="624" alt="image" src="https://github.com/user-attachments/assets/e6ae5361-659f-4d47-92d6-6453a0673d20" />
+
 
 (ii) Histograms :
 
 Show the distribution of a single numerical variable. For instance, a histogram of engine_size can help identify the most common engine sizes in the dataset.
 
-<img width="1664" height="736" alt="image" src="https://github.com/user-attachments/assets/4a74dc84-67fa-4d64-8665-cfaa5160466d" />
+<img width="940" height="627" alt="image" src="https://github.com/user-attachments/assets/63932bb9-4263-44ad-b3b2-781f1c12c656" />
+
 
 (iii) Box plot :
 
 The plot_boxplots function generates box plots for specified columns in a DataFrame to help identify outliers and understand the distribution of the data. Box plots are useful for visualizing data distributions and detecting any anomalies or extreme values.
 
-image
+<img width="940" height="624" alt="image" src="https://github.com/user-attachments/assets/5d63273d-27a5-4abf-be0e-e7659f1d981b" />
+
+
 (iv) Correlation heatmap :
 
 The plot_correlation_heatmap_fix function generates a correlation heatmap for numeric features in a DataFrame, providing a visual representation of feature relationships. This helps in identifying correlations and understanding how features relate to each other.
 
-image
+<img width="940" height="656" alt="image" src="https://github.com/user-attachments/assets/9213ef32-ccac-4b94-b2ae-897394853b21" />
+
+
 2.3 Insights and Observations
 From the summary statistics and visualizations, several interesting patterns and trends were observed:
 
@@ -139,7 +146,15 @@ Method: Incorporate knowledge of factors like brand reputation, engine specifica
 
 Example: High-end brands or cars with advanced safety features are generally expected to have higher prices. These insights guide the inclusion or exclusion of certain features in the final model.
 
-image
+Mileage	Engine_displacement	Year_of_manufacture	Transmission	Fuel_type	Owner_No.	Model_year	Location	Kilometer_Driven	Body_type	Price	
+0	23.1	998	2015	1	4	3	2015	0	120000	3	0.515874
+1	17	1497	2018	1	4	2	2018	0	32706	8	0.515972
+2	23.84	1199	2018	1	4	1	2018	0	11949	3	0.515918
+3	19.1	1197	2014	1	4	1	2014	0	17794	9	0.515889
+4	23.65	1248	2015	1	1	1	2015	0	60000	8	0.515967
+<img width="961" height="159" alt="image" src="https://github.com/user-attachments/assets/55f99890-8f25-4623-99f9-1072f4d59527" />
+
+
 By focusing on these selected features, the model is likely to achieve better performance, with improved accuracy and interpretability, while reducing the risk of overfitting by removing irrelevant or redundant features.
 
 3. Model Development
