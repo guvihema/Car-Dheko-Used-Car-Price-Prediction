@@ -1,7 +1,11 @@
 # Car-Dheko-Used-Car-Price-Prediction
 
 🚗 Car Dheko - Used Car Price Prediction
+
+      <img width="1918" height="994" alt="image" src="https://github.com/user-attachments/assets/37a72087-d1f7-499d-9b6a-64155cc1126b" />
       
+   <img width="1918" height="996" alt="image" src="https://github.com/user-attachments/assets/58091af4-f899-4d4f-9851-cf9b3a344e94" />
+
 
 # 📊 Project Overview
 The "Car Dheko - Used Car Price Prediction" project aims to develop an accurate machine learning model that predicts the prices of used cars. The project also involves deploying this model as an interactive web application using Streamlit. This tool will be user-friendly and accessible to both customers and sales representatives, allowing them to input car features and obtain real-time price predictions.
@@ -16,6 +20,7 @@ Enhancing customer experience and streamlining the pricing process at Car Dheko 
 We would be working with quite a large data which contains about 8369 data points where again we would be dividing that into the training set and the test set.
 Having a look at some of the cars that we are always excited to use in our daily lives, it is better to understand how these cars are being sold and their average prices.
 Feel free to take a look at the dataset that was used in the process of predicting the prices of cars. Below is the link.
+
 Source: https://www.cardekho.com/usedCars
 
 # 📂 Dataset
@@ -35,8 +40,10 @@ Root Mean Squared Error (RMSE)
 
 # 1. Data Processing
 Import and concatenate the datasets for various cities, convert them into a structured format, and concatenate them into a single dataset.
+# Data before structuring (unstructured data)
+<img width="1909" height="373" alt="image" src="https://github.com/user-attachments/assets/cf74a71c-7d54-4aae-810c-813dcf4090ed" />
 
-dictionary
+
 Address missing data using imputation techniques—mean, median, or mode for numerical columns, and mode or a new category for categorical columns.
 
 Next is standardizing the Data. Ensure that the data is in the correct format, e.g., removing units from numerical columns and converting them to integers.
@@ -46,6 +53,12 @@ Encoding categorical variables using one-hot encoding for nominal categorical va
 Normalizing numerical features using techniques like Min-Max Scaling or Standard Scaling.
 
 Identify and remove or cap outliers using methods such as the IQR (Interquartile Range) method or Z-score analysis.
+
+Data after structuring
+
+<img width="1671" height="511" alt="image" src="https://github.com/user-attachments/assets/07150e60-ee79-4547-998c-8d06c756c537" />
+
+<img width="1652" height="429" alt="image" src="https://github.com/user-attachments/assets/83fd83ae-e325-4166-8391-5fd4c2247269" />
 
 
  
@@ -72,12 +85,14 @@ visualizations were created:
 
 Visualize relationships between two numerical variables. For example, a scatter plot of price vs. mileage can reveal how the price decreases as mileage increases.
 
-image
+<img width="1325" height="870" alt="image" src="https://github.com/user-attachments/assets/4a5a0ad9-3c5e-4c38-b52c-c1d1e83ec7df" />
+
 (ii) Histograms :
 
 Show the distribution of a single numerical variable. For instance, a histogram of engine_size can help identify the most common engine sizes in the dataset.
 
-image
+<img width="1664" height="736" alt="image" src="https://github.com/user-attachments/assets/4a74dc84-67fa-4d64-8665-cfaa5160466d" />
+
 (iii) Box plot :
 
 The plot_boxplots function generates box plots for specified columns in a DataFrame to help identify outliers and understand the distribution of the data. Box plots are useful for visualizing data distributions and detecting any anomalies or extreme values.
@@ -189,16 +204,10 @@ Machine Learning Models	Mean Absolute Error (MAE)	Root Mean Squared Error (RMSE)
 2. Decision Tree Regressor	2.70174	5.1175	2.61888	0.82207
 3. Gradient Boosting Regressor	2.90385	4.76576	2.27124	0.84568
 4. Random Forests Regressor	2.1568	4.08725	1.65056	0.8865
-<img width="985" height="148" alt="image" src="https://github.com/user-attachments/assets/bdcfe2f1-d39e-4ec9-8caa-33d915ee82d7" />
+<img width="985" height="148" alt="image" src="https://github.com/user-attachments/assets/a2bbc9c3-cd54-4ac9-89a8-2d58adaae310" />
 
-
-Machine Learning Models	Mean Absolute Error (MAE)	Root Mean Squared Error (RMSE)	Mean Squared Error (MSE)	R-squared (R2)
-1. Linear Regression	4.38171	6.30828	3.57944	0.72963
-2. Decision Tree Regressor	2.70174	5.11750	2.61888	0.82207
-3. Gradient Boosting Regressor	2.90385	4.76576	2.27124	0.84568
-4. Random Forests Regressor	2.15680	4.08725	1.65056	0.88650
 Random Forest has the lowest MSE, the lowest RMSE , and the highest R² .This suggests that it has the best overall performance, providing the most accurate predictions and the best fit to the data.
-5. Optimization
+6. Optimization
 5.1 Feature Engineering
 Feature engineering involves creating new features or modifying existing ones to enhance the model’s performance. This process often involves:
 
@@ -247,7 +256,9 @@ The model processes the input data and returns a price prediction, which is then
 Running Locally: You can run the application locally using the following command:
 streamlit run app.py
 Deploying the Application: You can deploy the Streamlit app using platforms like Streamlit Cloud, Heroku, or any other hosting service that supports Python web applications
-image
+
+<img width="1917" height="831" alt="image" src="https://github.com/user-attachments/assets/e30dbdbe-e094-4193-a741-aa4b73f2bd07" />
+
 📜 Conclusion
 1.Accurate Predictive Model for Used Car Prices
 
